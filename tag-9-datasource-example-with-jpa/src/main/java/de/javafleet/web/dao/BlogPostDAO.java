@@ -32,9 +32,15 @@ public class BlogPostDAO {
      * Holt alle Blog-Posts aus der Datenbank
      */
     public List<BlogPost> findAll() throws SQLException {
-        List<BlogPost> posts = new ArrayList<>();
         
+        /*
+         * Query um die Datensätze aus der Datenbank zu lesen.
+         */
+                
+        Query q=em.createQuery("SELECT u FROM BlogPost u ", BlogPost.class);
         
+        List<BlogPost> posts =q.getResultList();
+
         return posts;
     }
     

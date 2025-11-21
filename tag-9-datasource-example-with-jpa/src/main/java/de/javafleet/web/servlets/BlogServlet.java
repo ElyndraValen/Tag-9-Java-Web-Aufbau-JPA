@@ -107,8 +107,9 @@ public class BlogServlet extends HttpServlet {
         List<BlogPost> posts = blogDAO.findAll();
         int postCount = blogDAO.count();
         
-        request.setAttribute("posts", posts);
-        request.setAttribute("postCount", postCount);
+        request.setAttribute("blogs", posts);
+        request.setAttribute("blogCount", postCount);
+   
         
         request.getRequestDispatcher("/WEB-INF/views/blog-list.jsp")
                .forward(request, response);
