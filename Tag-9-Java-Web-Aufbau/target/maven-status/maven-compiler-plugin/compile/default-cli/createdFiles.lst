@@ -1,0 +1,6 @@
+de/javafleet/web/servlets/BlogServlet.class
+de/javafleet/web/dao/BlogPostDAO.class
+de/javafleet/web/model/User.class
+de/javafleet/web/servlets/UserListServlet.class
+de/javafleet/web/model/BlogPost.class
+de/javafleet/web/dao/UserDAO.class
